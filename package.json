@@ -1,0 +1,29 @@
+{
+  "name": "pi-monitor",
+  "version": "0.1.0",
+  "description": "Pi extension for running background processes with live output in a native floating window",
+  "type": "commonjs",
+  "keywords": [
+    "pi-package"
+  ],
+  "files": [
+    ".pi/"
+  ],
+  "pi": {
+    "extensions": [
+      ".pi/extensions/monitor"
+    ]
+  },
+  "dependencies": {
+    "glimpseui": "^0.3.5"
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-coding-agent": "*",
+    "@sinclair/typebox": "*"
+  },
+  "os": [
+    "darwin"
+  ],
+  "author": "michaelliv",
+  "license": "MIT"
+}
