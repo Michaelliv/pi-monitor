@@ -1,11 +1,10 @@
 import { spawn } from "node:child_process";
-import { mkdirSync, existsSync, writeFileSync, openSync, createWriteStream } from "node:fs";
-import { tmpdir } from "node:os";
+import { mkdirSync, writeFileSync, createWriteStream } from "node:fs";
 import { join } from "node:path";
 import type { ExtensionAPI } from "@mariozechner/pi-coding-agent";
 import { Type } from "@sinclair/typebox";
 
-const MONITOR_DIR = join(tmpdir(), "pi-monitor");
+const MONITOR_DIR = "/tmp/pi-monitor";
 
 const MONITOR_HTML = `<html><head><style>
 *{margin:0;padding:0;box-sizing:border-box}
